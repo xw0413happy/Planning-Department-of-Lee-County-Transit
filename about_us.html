@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:visited{
+            color: white; /* this command doesn't work on class "button"*/
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>LeeTran is a department of the Lee County government and proudly provides public transportation, ADA paratransit service, and mobility On Demand service to the community of Lee County.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/images/One Org.png" alt="One Org" style="width:100%; margin-top: 41px; margin-bottom: 41px;">
+                <div class="container">
+                    <h2>County-Wide One Org Concept</h2>
+                    <p class="title">One Organization Employee Recognition Program</p>
+                    <p> Departments have been instrumental in supporting the One Org concept from inception and they continue to help guide the program through its evolution and development.
+                        Feedback helps HR's learning and development team develop the program into the version now being shared county-wide.
+                    </p>
+                    <p>The 5 PITCH principles are <strong>Professionalism</strong>, <strong>Innovation</strong>, <strong>Trust</strong>, <strong>Collaboration</strong>, and <strong>Honesty</strong>. The County-Wide One Org Concept showcase how all County departments utilize them in their daily work.</p>
+                    <p><button class="button"><a href="https://www.leegov.com/hr" style="text-decoration:none; color: white;">Contact</a></button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/images/evolve.PNG" alt="TDP" style="width:100%">
+                <div class="container">
+                    <h2>Transit Development Plan</h2>
+                    <p class="title">2021-2030 LeeTran TDP</p>
+                    <p>The Transit Development Plan (TDP) is a tactical guide for developing, improving, cultivating, and evolving public transportation in Lee County over the next 10 years.</p>
+                    <p>LeeTran has made it a practice to use the TDP to not only satisfy Florida Department of Transportation requirements, but to also foster consensus among local decision-makers and citizens on how to strategically implement the long-term vision and achieve transit-related community goals. 
+                    <p><button class="button"><a href="https://www.leegov.com/leetran/tdp" style="text-decoration:none; color: white;">Details</a></button></p>
+                    <!--The reason why I put <p> before <button> is because I want a space between paragraph and button-->
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/images/Lee-County-logo-vertical.png" alt="LeeCounty" style="width:78%; display: block; margin-left: auto; margin-right: auto;
+                margin-bottom: 15px;">
+                <div class="container">
+                    <h2>Lee County</h2>
+                    <p class="title">Southwest Florida</p>
+                    <p>Lee County is located in Southwest Florida on the Gulf Coast. As of the 2020 census, the population was 760,822. The county seat is Fort Myers (with a population of 86,395 as of the 2020 census), and the largest city is Cape Coral with an estimated 2020 population of 194,016. The county comprises the Cape Coral–Fort Myers, FL Metropolitan Statistical Area.
+                    Lee County was created in 1887 from Monroe County. It is about 120 miles south of Tampa at the meeting point of the Gulf of Mexico and the Caloosahatchee River.</p>
+                    <p><button class="button"><a href="https://www.leegov.com/leetran/how-to-ride/maps-schedules" style="text-decoration:none; color: white;">LeeTran Maps & Schedules</a></button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
