@@ -1,8 +1,8 @@
 
-# Probing Check GUI Desktop App
+# Web Page Design for Planning Department of Lee County Transit
 
-The app is basically analyzing *two separate files* to check over each other and generate a text document probe check report. 
-The **purpose** of developing this app is to target which fixed route buses are not probed and which dates are their last time probing.
+The publich website I created is basically combining *two files - one is HTML, another is CSS*. Later I will work on JavaScript, PHP, and also embed jQuery library.
+The **purpose** of developing this web page is to provide a general combination of entire work output of Planning Department, to make the staff easier to reach the data.
 
 
 
@@ -10,8 +10,8 @@ The **purpose** of developing this app is to target which fixed route buses are 
 
 This project is used by the following file formats:
 
-- **probing summary csv file**, which is downloaded from *GenFare*
-- **daily operation log folder**, which is provided by *LeeTran Operdation Department*
+- **Electrification Transition Worksheet**, which is provided by *Deputy Director*
+- **logo and images**, which are provided/downloaded from *google and Proterra official website*
 
 
 ## Deployment
@@ -40,27 +40,27 @@ auto-py-to-exe
 
 ## Repository Structure
 
-#### Update key notes:
+#### Notes:
 
 
-- (1) only pick up 3-digit Bus number
-- (2) remove text in stand-by list 
-- (3) remove '/' and ' / " from stand_by_list
+- (1) form.html is just a test file, not working for web page display
+- (2) index2.html and style2.css are example files, not working for web page display 
+- (3) Other web page is in design progress
 
 
 | File Name | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `ProbeCheck_V4` | `.py` | **Required**. It is the main file, updated to 4th version |
+| `index` | `.html` | **Required**. It is the home page. |
 
 #### Other supplementary files description
 
 ```http
-All uploaded .xlsm files are used for testing.
+If you see any other separate .css files, they should be combined into "style.css" file later
 ```
 
 | File Name | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `test for opt logs hurr ian`      | `.py` | **Test file** |
+| `style`      | `.css` | **CSS file**. It is css style file for all .html files |
 
 
 
@@ -81,6 +81,5 @@ Python, R, SQL, ArcGIS, Javascript, HTML, CSS, Nlogit, Synchro, Vissim, AutoCAD,
 ## Acknowledgements
 
  - [LeeTran](https://www.leegov.com/leetran/how-to-ride/maps-schedules)
- - [Learn more about how to loop over images by using Python Tkinter](https://www.youtube.com/watch?v=NoTM8JciWaQ&t=565s)
- - [Genfare](https://www.genfare.com/products/)
+ - [Learn more about how to use javascrip to open excel on html](https://www.youtube.com/watch?v=cjxSaTwPfGE&t=566s)
 
