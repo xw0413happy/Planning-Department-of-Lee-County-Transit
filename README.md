@@ -14,7 +14,7 @@ This project is used by the following file formats:
 - **logo and images**, which are provided/downloaded from *google and Proterra official website*
 
 
-## Deployment
+## Deployment--Ignore (for my other python projects)
 
 To deploy this project run, the following modules are needed to be imported as belows.
 
@@ -45,7 +45,7 @@ auto-py-to-exe
 
 - (1) form.html is just a test file, not working for web page display
 - (2) index2.html and style2.css are example files, not working for web page display 
-- (3) Other web page is in design progress
+- (3) Other web pages are in design progress
 
 
 | File Name | Type     | Description                |
@@ -71,7 +71,7 @@ If you see any other separate .css files, they should be combined into "style.cs
 
 
 ## 🚀 About Me
-I took 2 python classes during my M.S. degree-seeking program, now I am a computer language amateur, strong desire to learn more.
+I took 1 web design classes during Information System graduate program, now I am a computer language amateur, strong desire to learn more.
 
 
 ## 🛠 Skills
