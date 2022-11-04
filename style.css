@@ -10,7 +10,7 @@ body {
 
 .bg-img img {
     /* The image used */
-    background-image: url("trolley.png"); 
+    background-image: url("trolley.jpg"); 
     min-height: 480px;
 
     /* Center and scale the image nicely */ 
