@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Demo - jQuery Mobile</title>
+    <!-- <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css"> -->
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script> -->
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Summary of Involved Technology and NTD</h1>
+        </div>
+
+        <div>
+            <h2>
+                Bonita Springs Ultra On Demand Transit & Missing Probe Check
+            </h2>
+        </div>
+
+        <!-- <div role="main" class="phone"> -->
+        <div class="container">
+            <table data-role="table" id="phone-table" data-mode="columntoggle" data-column-btn-text="Compare"
+                data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+                <thead>
+                    <tr>
+                        <th class="label">GUI Model</th>
+                        <th>
+                            <h4>Probe Checker</h4>
+                            <h3>Version 4</h3>
+                        </th>
+                        <th data-priority="1">
+                            <h4>Ultra MoD</h4>
+                            <h3>Version 1</h3>
+                        </th>
+                        <th data-priority="2">
+                            <h4>Ultra MoD</h4>
+                            <h3>Version 2</h3>
+                        </th>
+                        <th data-priority="3">
+                            <h4>Ultra MoD</h4>
+                            <h3>Version 3</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="photos">
+                        <th class="label">Desktop App Icon</th>
+                        <td><a href="#img-brown-1" data-rel="popup" data-position-to="window"><img
+                                    src="images/probe_app.PNG"></a></td>
+                        <td><a href="#img-brown-2" data-rel="popup" data-position-to="window"><img
+                                    src="images/ultra_v1_app.PNG"></a></td>
+                        <td><a href="#img-brown-3" data-rel="popup" data-position-to="window"><img
+                                    src="images/ultra_v2_app.PNG"></a></td>
+                        <td><a href="#img-brown-4" data-rel="popup" data-position-to="window"><img
+                                    src="images/ultra_v3_app.PNG"></a></td>
+                    </tr>
+                    <tr class="contents">
+                        <th class="label">Features</th>
+                        <td>2 buttons for selecting file paths <br> 1 execute button</td>
+                        <td>1 button for selecting file path <br> 2 execute buttons</td>
+                        <td>1 button for selecting file path <br> 2 type-in entires <br> 2 execute buttons</td>
+                        <td>1 button for selecting file path <br> 2 type-in entires <br> 2 execute buttons</td>
+                    </tr>
+                    <tr class="contents">
+                        <th class="label">Format & Language</th>
+                        <td>csv <br> folder <br> python</td>
+                        <td>xlsx <br> python </td>
+                        <td>xlsx <br> python</td>
+                        <td>xlsx <br> python</td>
+                    </tr>
+                    <!-- <tr class="contents"> -->
+                    <!-- <th class="label">Depth</th>
+                        <td>0.3"</td>
+                        <td>0.34"</td>
+                        <td>0.42"</td>
+                        <td>0.37"</td>
+                    </tr> -->
+                    <tr class="contents">
+                        <th class="label">Update Information</th>
+                        <td>(1) only pick up 3-digit Bus #<br> (2) remove string, '/' and ' / ' from stand by list<br> (3) remove nvarchar text from daily line up list</td>
+                        <td>add monthly trip images</td>
+                        <td> (1) add last 30 days trip images <br> (2) customize date range</td>
+                        <td> (1) remove last 30 days trip images <br> (2) update date range <br> (3) add "unique trip status by time of the day" for weekdays and weekends</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Popups for lightbox images -->
+            <div id="img-brown-1" data-role="popup" data-overlay-theme="a">
+                <img src="images/probe.PNG">
+            </div>
+            <div id="img-brown-2" data-role="popup" data-overlay-theme="a">
+                <img src="images/ultra_v1.PNG">
+            </div>
+            <div id="img-brown-3" data-role="popup" data-overlay-theme="a">
+                <img src="images/ultra_v2.PNG">
+            </div>
+            <div id="img-brown-4" data-role="popup" data-overlay-theme="a">
+                <img src="images/ultra_v3.PNG">
+            </div>
+
+            <div>
+                <h2>
+                    Fiscal Year 2022 Reporting - Fixed Routes Ridership
+                </h2>
+            </div>
+
+
+
+            <!-- <div role="main" class="financial"> -->
+            <table data-role="table" id="financial-table" data-column-btn-theme="b" data-column-popup-theme="a"
+                data-mode="columntoggle" class="table-stroke">
+                <thead>
+                    <tr class="th-groups">
+                        <td></td>
+                        <th colspan="3" data-priority="6">Q1 2022</th>
+                        <th colspan="3" data-priority="5">Q2 2022</th>
+                        <th colspan="3" data-priority="4">Q3 2022</th>
+                        <th colspan="3" data-priority="3">Q4 2022</th>
+                        <th colspan="1" data-priority="1" class="totals">YTD Totals</th>
+                    </tr>
+                    <tr>
+                        <th>Month</th>
+                        <th>Oct 2021</th>
+                        <th>Nov 2021</th>
+                        <th>Dec 2021</th>
+                        <th>Jan 2022</th>
+                        <th>Feb 2022</th>
+                        <th>Mar 2022</th>
+                        <th>Apr 2022</th>
+                        <th>May 2022</th>
+                        <th>Jun 2022</th>
+                        <th>Jul 2022</th>
+                        <th>Aug 2022</th>
+                        <th>Sep 2022</th>
+                        <th>Totals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>UPT</th>
+                        <td>134,851</td>
+                        <td>142,565</td>
+                        <td>202,817</td>
+                        <td>188,471</td>
+                        <td>214,967</td>
+                        <td>278,565</td>
+                        <td>226,147</td>
+                        <td>136,464</td>
+                        <td>133,453</td>
+                        <td>130,828</td>
+                        <td>147,280</td>
+                        <td>119,057</td>
+                        <td>2,055,465</td>
+                    </tr>
+                    <tr>
+                        <th>VRM</th>
+                        <td>244,225</td>
+                        <td>237,708</td>
+                        <td>259,975</td>
+                        <td>253,007</td>
+                        <td>238,937</td>
+                        <td>263,754</td>
+                        <td>248,548</td>
+                        <td>229,042</td>
+                        <td>233,175</td>
+                        <td>227,846</td>
+                        <td>243,007</td>
+                        <td>173,068</td>
+                        <td>2,852,292</td>
+                    </tr>
+                    <tr>
+                        <th>VRH</th>
+                        <td>15,976</td>
+                        <td>15,971</td>
+                        <td>18,480</td>
+                        <td>17,983</td>
+                        <td>16,973</td>
+                        <td>18,811</td>
+                        <td>17,455</td>
+                        <td>15,132</td>
+                        <td>15,412</td>
+                        <td>15,054</td>
+                        <td>16,059</td>
+                        <td>11,377</td>
+                        <td>194,683</td>
+                    </tr>
+                    <tr>
+                        <th>VOMS</th>
+                        <td>39</td>
+                        <td>46</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>44</td>
+                        <td>44</td>
+                        <td>37</td>
+                        <td>37</td>
+                        <td>37</td>
+                        <td>37</td>
+                        <td>37</td>
+                        <td>46</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <h3>
+                    <p><button class="button"><a href="https://performance-management-leegis.hub.arcgis.com/pages/transit" style="text-decoration:none; color:#5d8aa8;">Explore More: Performance Dashboard</a></button></p>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
