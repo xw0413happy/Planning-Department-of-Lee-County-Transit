@@ -30,6 +30,9 @@
         <div class="container">
             <table data-role="table" id="phone-table" data-mode="columntoggle" data-column-btn-text="Compare"
                 data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+                <!-- Because I'm using jQuery mobile library, 
+                    it is a phone table demo, I just left ID name ("phone-table") there' -->
+                    <!-- command "data-column-btn-text="Compare"" is for changing button name-->
                 <thead>
                     <tr>
                         <th class="label">GUI Model</th>
@@ -54,13 +57,13 @@
                 <tbody>
                     <tr class="photos">
                         <th class="label">Desktop App Icon</th>
-                        <td><a href="#img-brown-1" data-rel="popup" data-position-to="window"><img
+                        <td><a href="#img-probe" data-rel="popup" data-position-to="window"><img
                                     src="images/probe_app.PNG"></a></td>
-                        <td><a href="#img-brown-2" data-rel="popup" data-position-to="window"><img
+                        <td><a href="#img-ultra-v1" data-rel="popup" data-position-to="window"><img
                                     src="images/ultra_v1_app.PNG"></a></td>
-                        <td><a href="#img-brown-3" data-rel="popup" data-position-to="window"><img
+                        <td><a href="#img-ultra-v2" data-rel="popup" data-position-to="window"><img
                                     src="images/ultra_v2_app.PNG"></a></td>
-                        <td><a href="#img-brown-4" data-rel="popup" data-position-to="window"><img
+                        <td><a href="#img-ultra-v3" data-rel="popup" data-position-to="window"><img
                                     src="images/ultra_v3_app.PNG"></a></td>
                     </tr>
                     <tr class="contents">
@@ -72,7 +75,7 @@
                     </tr>
                     <tr class="contents">
                         <th class="label">Format & Language</th>
-                        <td>csv <br> folder <br> python</td>
+                        <td>csv <br> operation log folder <br> python</td>
                         <td>xlsx <br> python </td>
                         <td>xlsx <br> python</td>
                         <td>xlsx <br> python</td>
@@ -89,22 +92,23 @@
                         <td>(1) only pick up 3-digit Bus #<br> (2) remove string, '/' and ' / ' from stand by list<br> (3) remove nvarchar text from daily line up list</td>
                         <td>add monthly trip images</td>
                         <td> (1) add last 30 days trip images <br> (2) customize date range</td>
-                        <td> (1) remove last 30 days trip images <br> (2) update date range <br> (3) add "unique trip status by time of the day" for weekdays and weekends</td>
+                        <td> (1) remove last 30 days trip images <br> (2) constrain all images into same size <br> (3) add "unique trip status by time of the day" for weekdays&weekends and seats request daily trip
+                        </td>
                     </tr>
                 </tbody>
             </table>
 
             <!-- Popups for lightbox images -->
-            <div id="img-brown-1" data-role="popup" data-overlay-theme="a">
+            <div id="img-probe" data-role="popup" data-overlay-theme="a">
                 <img src="images/probe.PNG">
             </div>
-            <div id="img-brown-2" data-role="popup" data-overlay-theme="a">
+            <div id="img-ultra-v1" data-role="popup" data-overlay-theme="a">
                 <img src="images/ultra_v1.PNG">
             </div>
-            <div id="img-brown-3" data-role="popup" data-overlay-theme="a">
+            <div id="img-ultra-v2" data-role="popup" data-overlay-theme="a">
                 <img src="images/ultra_v2.PNG">
             </div>
-            <div id="img-brown-4" data-role="popup" data-overlay-theme="a">
+            <div id="img-ultra-v3" data-role="popup" data-overlay-theme="a">
                 <img src="images/ultra_v3.PNG">
             </div>
 
@@ -117,7 +121,7 @@
 
 
             <!-- <div role="main" class="financial"> -->
-            <table data-role="table" id="financial-table" data-column-btn-theme="b" data-column-popup-theme="a"
+            <table data-role="table" id="ridership-table" data-column-btn-theme="b" data-column-popup-theme="a"
                 data-mode="columntoggle" class="table-stroke">
                 <thead>
                     <tr class="th-groups">

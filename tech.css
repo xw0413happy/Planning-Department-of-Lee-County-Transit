@@ -24,19 +24,10 @@ h1 {
     padding-bottom: 100px;
 }
 
-#financial-table {
-    background-color: white;
-    padding-top: 100px;
-    margin: 2em 0 0 0;
-}
-
-photos.img {
-    width: 20%;
-}
 
 /*These apply across all breakpoints because they are outside of a media query */
 table.phone-compare thead th {
-    background-color: #faebd7;
+    background-color: rgba(50, 50, 50, 0.3);
     /* opacity: 0.6; */
 
 }
@@ -59,23 +50,23 @@ table.phone-compare th.label {
     font-size: 1.1em;
     opacity: 0.8;
     padding: 1.2em .8em;
-    background-color: #faebd7;
+    background-color: rgba(50, 50, 50, 0.2);
 }
 
 table.phone-compare tbody tr.photos td {
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: #faebd7;
     padding: 0;
 }
 
 
 table.phone-compare tbody tr.contents td {
-    background-color: rgba(50, 50, 50, 0.3);
+    background-color: #faebd7;
 }
 
 
 table.phone-compare tbody tr.photos img {
     max-width: 100%;
-    min-width: 60px;
+    min-width: 40px;
 }
 
 /*  Use the target selector to style the column chooser button */
